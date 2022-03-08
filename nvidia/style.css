@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+header figure {
+    width: 200px;
+}
+
+header figure img {
+    width: 100%;
+}
+
+nav {
+    flex : 1;
+    text-align: center;
+}
+
+nav a {
+    list-style : none;
+    text-decoration: none;
+    margin: 0 2em;
+}
