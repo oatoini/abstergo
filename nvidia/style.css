@@ -4,6 +4,14 @@
     margin: 0;
 }
 
+#container {
+    /* règle CSS */
+    /* propriété : valeur */
+    width: 1024px;
+    margin: auto;
+    background-color: white;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -12,19 +20,256 @@ header {
 
 header figure {
     width: 200px;
+    margin: 1em;   
 }
 
 header figure img {
-    width: 100%;
+    width: 100%; 
 }
 
 nav {
     flex : 1;
     text-align: center;
+    margin: 1em;
 }
 
 nav a {
     list-style : none;
     text-decoration: none;
-    margin: 0 2em;
+    margin: 0 2em;    
+    color: black;
+    font-weight:bold;
+}
+
+section {
+    display: flex;
+}
+
+section img {
+    flex-grow: 1;
+    height: 300px;
+    object-fit: cover;
+}
+
+section figcaption {
+    display: flex;
+    background-color: rgb(119, 189, 119, 0.7);
+    position: absolute;
+    align-self: flex-end;
+    justify-content: space-between;
+    width: 1024px;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+section figcaption a {
+    text-decoration: none;
+    background-color:rgb(88, 165, 16);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+section figcaption span {
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+article {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    border-bottom: solid rgb(88, 165, 16);
+}
+
+article img {
+    border: solid 1px;
+    float: left;
+    margin-right: 1em;
+    width: 2em;
+    height: 1.5em;
+}
+
+#triangle {
+    transform: translate(320px, 431px);
+    height: 15px;
+    width: 15px;
+    position :absolute;
+    border: none;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    padding: 1em;
+}
+
+aside img {
+    width: 40%;
+    align-self: center;
+    margin: 1em;
+}
+
+aside p {
+    text-align:justify;
+}
+
+p {
+    margin: 5px 0;
+}
+
+aside div {
+    display: flex;
+    justify-content: center;
+}
+
+aside div i {
+    margin: 0.5em;
+}
+
+footer {
+    display: flex;
+    margin: 20px 0;
+}
+
+footer .galerie div {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .galerie img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.apropos {
+    width: 100%;
+    height: 100%; 
+}
+
+.green {
+    background-color: rgb(88, 165, 16);
+    color: white;
+}
+
+.lorem {
+    text-align: center;
+}
+
+.titre {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+.newsletter {
+    flex: 1;
+    margin: 1em;
+}
+
+.galerie {
+    margin: 1em;
+}
+
+.galerie img {
+    margin: 0.2em;
+}
+
+footer h2 {
+    margin-bottom: 0.5em;
+}
+
+.partenaires {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 1em;
+}
+
+.partenaires div{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.partenaires a {
+    width: 80px;
+    height: 80px;
+    margin: 0.2em;
+}
+
+.partenaires a img {
+    width: 100%;
+}
+
+
+#contact input {
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#submit {
+    background-color: rgb(88, 165, 16);
+    color: white;
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    #container {
+        width: 100%;
+    }
+    
+    nav {
+        display: flex;
+        flex : 1;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: center;
+        margin: 1em;
+    }
+
+    section figcaption {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 576px) {
+    #container {
+        width: 100%;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section figcaption {
+        width: 100%;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
 }
