@@ -1,7 +1,0 @@
-div {
-    position: absolute;
-
-#vert {
-    display: flex;
-    transform: translateX(180px) rotate(45deg);
-}
